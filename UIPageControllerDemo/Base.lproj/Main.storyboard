@@ -20,23 +20,58 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_onboarding_bg" translatesAutoresizingMaskIntoConstraints="NO" id="YOK-1K-sya">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Inx-QD-Tnc">
-                                <rect key="frame" x="0.0" y="59" width="402" height="593"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Inx-QD-Tnc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="593"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jlt-3f-rSy">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="395" height="594"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Vf9-7q-Rbj">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCell" id="Vf9-7q-Rbj" customClass="OnboardingCell" customModule="UIPageControllerDemo" customModuleProvider="target">
+                                        <rect key="frame" x="-1" y="0.0" width="395" height="594"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lvh-z0-ydr">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="395" height="594"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="17X-W4-ZOC">
+                                                    <rect key="frame" x="72.666666666666686" y="122" width="250" height="250"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="250" id="Q8J-aa-J41"/>
+                                                        <constraint firstAttribute="width" constant="250" id="j8P-rQ-3Cd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCf-AD-D6m" userLabel="길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다 길다">
+                                                    <rect key="frame" x="50" y="462.33333333333331" width="295" height="101.66666666666669"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSIC MOVES YOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruK-Mp-uzx">
+                                                    <rect key="frame" x="104.33333333333333" y="423.33333333333331" width="186.33333333333337" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="WCf-AD-D6m" secondAttribute="bottom" constant="30" id="Hhu-Io-ycm"/>
+                                                <constraint firstItem="17X-W4-ZOC" firstAttribute="centerX" secondItem="Lvh-z0-ydr" secondAttribute="centerX" id="UhU-1U-2hN"/>
+                                                <constraint firstItem="WCf-AD-D6m" firstAttribute="centerX" secondItem="Lvh-z0-ydr" secondAttribute="centerX" id="Yyu-HD-u0w"/>
+                                                <constraint firstItem="WCf-AD-D6m" firstAttribute="leading" secondItem="Lvh-z0-ydr" secondAttribute="leading" constant="50" id="hYp-Q5-lRb"/>
+                                                <constraint firstItem="WCf-AD-D6m" firstAttribute="top" secondItem="ruK-Mp-uzx" secondAttribute="bottom" constant="15" id="hcR-FS-idz"/>
+                                                <constraint firstItem="17X-W4-ZOC" firstAttribute="centerY" secondItem="Lvh-z0-ydr" secondAttribute="centerY" constant="-50" id="nc6-od-mIu"/>
+                                                <constraint firstItem="ruK-Mp-uzx" firstAttribute="centerX" secondItem="Lvh-z0-ydr" secondAttribute="centerX" id="pda-84-axa"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="395" height="594"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="WCf-AD-D6m" id="ypq-lG-5Bv"/>
+                                            <outlet property="thumbnailImageView" destination="17X-W4-ZOC" id="XUc-gt-6C8"/>
+                                            <outlet property="titleLabel" destination="ruK-Mp-uzx" id="vsq-qd-T0I"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
