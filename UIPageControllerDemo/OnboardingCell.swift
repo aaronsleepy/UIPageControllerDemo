@@ -16,7 +16,7 @@ class OnboardingCell: UICollectionViewCell {
     func configiure(_ message: OnboardingMessage) {
         thumbnailImageView.image = UIImage(named: message.imageName)
         titleLabel.text = message.title
-        descriptionLabel.text = message.title
+        descriptionLabel.text = message.description
     }
     
     
