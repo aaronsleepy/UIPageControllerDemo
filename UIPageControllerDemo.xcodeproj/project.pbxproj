@@ -16,6 +16,8 @@
 		938238E4292A06AF00D5DE6D /* UIPageControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938238E3292A06AF00D5DE6D /* UIPageControllerDemoTests.swift */; };
 		938238EE292A06AF00D5DE6D /* UIPageControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938238ED292A06AF00D5DE6D /* UIPageControllerDemoUITests.swift */; };
 		938238F0292A06AF00D5DE6D /* UIPageControllerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938238EF292A06AF00D5DE6D /* UIPageControllerDemoUITestsLaunchTests.swift */; };
+		93B14FB0292A1823008A2F77 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FAF292A1823008A2F77 /* OnboardingCell.swift */; };
+		93B14FB2292A18A2008A2F77 /* OnboardMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FB1292A18A2008A2F77 /* OnboardMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		938238E9292A06AF00D5DE6D /* UIPageControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIPageControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938238ED292A06AF00D5DE6D /* UIPageControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControllerDemoUITests.swift; sourceTree = "<group>"; };
 		938238EF292A06AF00D5DE6D /* UIPageControllerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControllerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93B14FAF292A1823008A2F77 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		93B14FB1292A18A2008A2F77 /* OnboardMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				938238CE292A06AD00D5DE6D /* SceneDelegate.swift */,
 				938238D0292A06AD00D5DE6D /* OnboardingViewController.swift */,
 				938238D2292A06AD00D5DE6D /* Main.storyboard */,
+				93B14FAF292A1823008A2F77 /* OnboardingCell.swift */,
+				93B14FB1292A18A2008A2F77 /* OnboardMessage.swift */,
 				938238D5292A06AF00D5DE6D /* Assets.xcassets */,
 				938238D7292A06AF00D5DE6D /* LaunchScreen.storyboard */,
 				938238DA292A06AF00D5DE6D /* Info.plist */,
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				938238D1292A06AD00D5DE6D /* OnboardingViewController.swift in Sources */,
+				93B14FB2292A18A2008A2F77 /* OnboardMessage.swift in Sources */,
 				938238CD292A06AD00D5DE6D /* AppDelegate.swift in Sources */,
+				93B14FB0292A1823008A2F77 /* OnboardingCell.swift in Sources */,
 				938238CF292A06AD00D5DE6D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
