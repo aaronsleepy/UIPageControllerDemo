@@ -123,6 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Inx-QD-Tnc" id="agc-Hb-fXz"/>
+                        <outlet property="pageControl" destination="ET8-yJ-qdb" id="iQu-ur-DDz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

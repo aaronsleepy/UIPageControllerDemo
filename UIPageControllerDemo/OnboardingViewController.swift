@@ -10,6 +10,7 @@ import UIKit
 class OnboardingViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     let messages: [OnboardingMessage] = OnboardingMessage.messages
     
@@ -22,6 +23,8 @@ class OnboardingViewController: UIViewController {
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.estimatedItemSize = .zero
         }
+        
+        pageControl.numberOfPages = messages.count
     }
 }
 
@@ -57,4 +60,14 @@ extension OnboardingViewController : UICollectionViewDelegateFlowLayout {
     }
 }
 
-
+extension OnboardingViewController : UIScrollViewDelegate {
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        print(Int(scrollView.contentOffset.x / self.collectionView.bounds.width))
+//    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageIndex = Int(scrollView.contentOffset.x / self.collectionView.bounds.width)
+        
+        pageControl.currentPage = pageIndex
+    }
+}
