@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,6 +20,29 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_onboarding_bg" translatesAutoresizingMaskIntoConstraints="NO" id="YOK-1K-sya">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Inx-QD-Tnc">
+                                <rect key="frame" x="0.0" y="59" width="402" height="593"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jlt-3f-rSy">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Vf9-7q-Rbj">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lvh-z0-ydr">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ET8-yJ-qdb">
+                                <rect key="frame" x="138.66666666666666" y="692" width="115.66666666666666" height="26"/>
+                            </pageControl>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZXl-J9-yul">
                                 <rect key="frame" x="0.0" y="758" width="393" height="60"/>
                                 <subviews>
@@ -47,12 +71,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Inx-QD-Tnc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="9" id="2m2-hP-EyK"/>
                             <constraint firstItem="YOK-1K-sya" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="2nw-IW-bDz"/>
+                            <constraint firstItem="Inx-QD-Tnc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8aa-Nc-hmi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZXl-J9-yul" secondAttribute="bottom" id="FiB-hE-MQm"/>
                             <constraint firstItem="YOK-1K-sya" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RME-Ox-NtU"/>
                             <constraint firstAttribute="top" secondItem="YOK-1K-sya" secondAttribute="top" id="Tmx-IS-sp2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YOK-1K-sya" secondAttribute="trailing" id="cFe-hc-20m"/>
+                            <constraint firstItem="ET8-yJ-qdb" firstAttribute="top" secondItem="Inx-QD-Tnc" secondAttribute="bottom" constant="40" id="cp4-uX-YSW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZXl-J9-yul" secondAttribute="trailing" id="ftS-LS-AEL"/>
+                            <constraint firstItem="Inx-QD-Tnc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="im1-a3-dSZ"/>
+                            <constraint firstItem="ZXl-J9-yul" firstAttribute="top" secondItem="ET8-yJ-qdb" secondAttribute="bottom" constant="40" id="lzD-Br-5zc"/>
+                            <constraint firstItem="ET8-yJ-qdb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mmS-Uj-XQZ"/>
                             <constraint firstItem="ZXl-J9-yul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zxF-MY-iLT"/>
                         </constraints>
                     </view>
