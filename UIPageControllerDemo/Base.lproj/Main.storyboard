@@ -121,6 +121,9 @@
                             <constraint firstItem="ZXl-J9-yul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zxF-MY-iLT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Inx-QD-Tnc" id="agc-Hb-fXz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
